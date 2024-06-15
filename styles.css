@@ -9,6 +9,8 @@
   --primary-color: #11161d;
 }
 
+/* Header styles */
+
 header {
   position: relative;
   background-image: url("https://s3.amazonaws.com/shecodesio-production/uploads/files/000/129/103/original/home-page-background.jpg?1718458221");
@@ -44,13 +46,7 @@ header h2 {
   font-family: var(--default-font-family);
 }
 
-h3 {
-  font-size: 25px;
-  text-align: center;
-  font-family: var(--default-font-family);
-}
-
-#image {
+#image-main {
   display: none; /* Hide the img tag - using it as a background */
 }
 
@@ -68,12 +64,173 @@ h3 {
   text-align: center;
 }
 
+/* Tribute info section */
+
 #tribute-info {
-  margin: 30px 0 30px 0;
   color: var(--primary-color);
 }
 
-.harry-potter {
+#tribute-info h3 {
+  font-size: 25px;
+  text-align: center;
+  font-family: var(--default-font-family);
+  margin: 30px 0;
+}
+
+#tribute-info .harry-potter {
   font-family: var(--heading-font-family);
   font-size: 30px;
+}
+
+/* Houses section */
+
+.houses {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 16px;
+  max-width: 1400px;
+  margin: 30px auto;
+  padding: 20px 10px;
+}
+
+.houses img {
+  display: block;
+  width: 300px;
+  height: auto;
+  margin-bottom: 20px;
+  border-radius: 5px;
+}
+
+/* Patronus section */
+
+.section-3 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px;
+  background-color: var(--primary-color);
+}
+
+.patronum {
+  text-align: center;
+  width: 250px;
+}
+
+.patronum ul {
+  list-style-type: none;
+  padding: 0;
+  margin-top: 10px;
+  color: #ffffff;
+  font-family: var(--default-font-family);
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+.patronum img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+/* Wizarding World link section */
+
+.tribute-link h3 {
+  font-size: 25px;
+  text-align: center;
+  font-family: var(--default-font-family);
+  margin: 30px 0;
+}
+
+a {
+  color: var(--primary-color);
+
+  transition: color 0.3s ease-in-out;
+}
+
+a:hover {
+  color: #ffffff;
+  background-color: var(--primary-color);
+  padding: 5px;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+.ww-link {
+  font-family: var(--heading-font-family);
+  font-size: 25px;
+}
+
+/* Tale of Three Brothers section */
+
+.section-5 {
+  background-color: var(--primary-color);
+  padding: 20px;
+}
+
+.tale {
+  color: #ffffff;
+  text-align: center;
+  font-size: 40px;
+  font-family: var(--heading-font-family);
+  font-weight: 700;
+  padding-bottom: 10px;
+}
+
+.tale-sub {
+  color: #ffffff;
+  text-align: center;
+  font-size: 30px;
+  padding-bottom: 20px;
+}
+
+#image {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  margin: 0 auto;
+  border-radius: 5px;
+}
+
+.para {
+  max-width: 700px;
+  margin: 0 auto;
+  color: #ffffff;
+  font-size: 18px;
+  padding: 20px;
+  line-height: 1.5;
+}
+
+.para p {
+  margin-bottom: 20px;
+}
+
+/* Footer section */
+
+footer {
+  text-align: center;
+  font-size: 16px;
+  font-family: var(--default-font-family);
+  padding: 20px;
+}
+
+.footer-hp {
+  font-family: var(--heading-font-family);
+  font-weight: 700;
+  font-size: 16px;
+}
+
+.link a {
+  color: var(--primary-color);
+  transition: color 0.3s ease-in-out;
+}
+
+.link a:hover {
+  color: #ffffff;
+  text-decoration: none;
+  background-color: var(--primary-color);
+  padding: 5px;
+  border-radius: 5px;
 }

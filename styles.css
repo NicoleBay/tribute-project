@@ -20,6 +20,7 @@ header {
   height: 100vh;
   text-align: center;
   color: #ffffff;
+  padding: 20px 10px;
 }
 
 header h1,
@@ -30,19 +31,21 @@ header h2 {
 }
 
 header h1 {
-  top: 40%;
+  top: 35%;
   font-size: 100px;
   line-height: 1;
   margin: 0;
+  padding: 30px;
   font-family: var(--heading-font-family);
 }
 
 header h2 {
-  top: 50%;
+  top: 60%;
   font-size: 30px;
   font-weight: bold;
   line-height: 1.5;
-  margin: 0;
+  margin: 10px;
+  padding: 30px;
   font-family: var(--default-font-family);
 }
 
@@ -57,7 +60,7 @@ header h2 {
   transform: translateX(-50%);
   background-color: rgba(0, 0, 0, 0.5);
   color: #ffffff;
-  padding: 5px 10px;
+  padding: 10px;
   border-radius: 5px;
   font-family: var(--default-font-family);
   font-size: 16px;
@@ -233,4 +236,51 @@ footer {
   background-color: var(--primary-color);
   padding: 5px;
   border-radius: 5px;
+}
+
+/* media query */
+
+@media (max-width: 768px) {
+  #img-caption {
+    display: none !important; /* Hide the caption on small screens */
+  }
+
+  header h1 {
+    font-size: 60px;
+  }
+
+  header h2 {
+    font-size: 16px;
+  }
+
+  #tribute-info h3 {
+    font-size: 20px;
+    padding: 5px 10px 5px 10px;
+  }
+
+  .tribute-link h3 {
+    font-size: 20px;
+    padding: 5px 10px 5px 10px;
+  }
+
+  .tale {
+    font-size: 24px;
+  }
+
+  .tale-sub {
+    font-size: 20px;
+  }
+
+  .para {
+    font-size: 16px;
+    padding: 10px;
+  }
+
+  footer {
+    font-size: 12px;
+  }
+
+  .footer-hp {
+    font-size: 12px;
+  }
 }
